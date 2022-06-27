@@ -73,7 +73,26 @@
       <div class="form-floating p-3" > Consulta
       <textarea class="form-control" placeholder="Escribi tu comentario" id="floatingTextarea" style="height: 100px"></textarea>
       <label for="floatingTextarea"></label>
-      <div class="p-3 "><button type="submit" class="btn btn-dark ">Enviar</button></div>
+      <div class="p-3 "><button type="button" class="btn btn-dark" data-bs-toggle="modal"data-bs-target="#exampleModal">Enviar</button></div>
+
+      <!-- Modal -->
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title text-dark " id="exampleModalLabel">Tu consulta fue enviada!</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    Muchas Gracias!
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+      
+
+
       </div>
 
     </div>
